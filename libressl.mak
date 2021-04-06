@@ -15,7 +15,7 @@ it: # the default goal {{{1
 it:
 	@printf '%s\n' 'BUILD_PATH $(BUILD_PATH)' 'TARGET $(TARGET)' \
 		'LINUX_HEADERS $(LINUX_HEADERS)' 'INCLUDE_DIRS $(INCLUDE_DIRS)'
-	@sudo -E docker run -itv $(BUILD_PATH):/opt \
+	#@sudo -E docker run -itv $(BUILD_PATH):/opt \
 		-v $(MUSL_PATH)/bin:/home/test_user/bin \
 		base bash
 
